@@ -1,0 +1,205 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout usando Flexbox */
+header {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__ul{
+  list-style: none;
+}
+
+.navbar__a{
+  margin-left: 15px;
+  text-decoration: none;
+  color: #FFC9CE;
+}
+
+.navbar__ul{
+  display: flex;
+}
+
+.portada{
+  white-space: ;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.portada img{
+  width: 70%;
+  border-radius: 20px;
+  margin-top: 25px;
+
+}
+
+section {
+  padding: 2em;
+}
+
+
+.acerca-img img {
+    max-width:100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.h2{
+  font-size: 250%;
+  font-family:'Times New Roman', Times, serif;
+  color: #F9A1A9;
+}
+
+.texto{
+  font-size: 120%;
+}
+
+.lista{
+  font-size: 45px;
+}
+
+
+.parrafo__inicial{
+  margin-left: 10%;
+  margin-right:10%;
+  margin-top: 10px;
+  background-color: #4b3d55;
+  padding: 10px 15px;
+  border-radius: 20px;
+
+  box-shadow: 0 8px 8px;
+  text-align: center;
+
+
+}
+
+
+/* Usar CSS Grid para mostrar proyectos */
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.proyecto{
+  background-color: #635c68;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  min-width: 200px;
+  max-width: 240px;
+  box-shadow: 0 2px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+}
+
+.proyecto h3 {
+  color: #F9A1A9;
+  margin-bottom: 10px;
+}
+
+
+form label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: #784c7c;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: 1px solid #cbb7dd;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+form button {
+  
+  background-color: #a76999;
+  color: white;
+  border: none;
+  padding: 0.7em 1.5em;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.proyecto a:hover{
+  background-color: #FFC9CE;
+  color: #190f1b;
+}
+
+.proyecto a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #190f1b;
+  color: #FFC9CE;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+  .acerca {
+    flex-direction: column;
+    text-align: center;
+  }
+  .portada img {
+
+  }
+
+    
+}
+
+
+form button:hover {
+  background-color: #9c61b6;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+
+
+footer {/*Footer*/
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+body {
+  background-color: #190f1b; 
+  color: #FFC9CE;/*bodytexto*/
+}
+
+header, footer {
+  background-color: #544E58;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
